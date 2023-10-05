@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 04 - Formulario </title>
+        <meta charset="utf-8">
+    </head>
+    <body bgcolor="purple">
+
+
+        <h1 align="center" ><font color="white"> Formulário HTML</font> </h1>
+        <br/>
+        <h2 align="center"><font color="white"> Pesquisa sobre roupas </font> </h2>
+        <table width="800" align="center" bgcolor="violet">
+            <form action="enviou.php" method="post" name="cadastro">
+          <tr><td>
+      <fieldset>
+        <legend> Informações pessoais  : </legend>
+
+          <table cellpadding="5" cellspacing="3" align="center">
+            <tr>
+
+            <td><label> Nome: </label></td>
+        <td><input type="text" id="nome" name="nome" size="30" maxlength="" placeholder="Digite seu nome" required/></td>
+            </tr>
+            <tr>
+                <td><label> E-mail : </label></td>
+                <td><input type="email" id="mail" name="mail" size="30" maxlength="" placeholder="Digite seu e-mail" required/></td>
+                    </tr>
+                    <tr>
+
+                        <td><label> CPF: </label></td>
+                    <td><input type="number" id="cpf" name="cpf" size="30" maxlength="11" placeholder="Digite seu CPF" required/></td>
+                        </tr>
+                        <tr>
+    
+            <tr>
+        <td><label> Idade : </label></td>
+        <td><input type="text" id="Idade" name="Idade" maxlength="2" placeholder="Digite sua Idade" required/></td>
+            </tr>
+
+            
+            <tr>
+        <td><label> sexo :</label></td>
+        <td>
+        <input type="radio" id="sexo" name="sexo" value="masculino"
+        required/>
+        <label> masculino</label>
+        <input type="radio" id="sexo" name="sexo" value="feminino" required/>
+        <label> feminino</label>
+        </td>
+            </tr>
+            <tr>
+        <td><label> Estado :</label></td>
+       
+          <td><select id="estado" name="estado" required>
+          
+          <option value="" selected="selected" > Selecione </option>
+          <option value="MG"> Minas Gerais </option>
+          <option value="SP"> Sao paulo </option>
+          <option value="RJ"> Rio de janeiro </option>
+          <option value="ES"> Espírito Santo </option>
+          
+        </select> </td>
+        
+            </tr>
+
+
+      </table>
+        
+
+      </fieldset>
+      <fieldset>
+        <legend> Preferência de Roupas : </legend>
+        <table cellpadding="5" cellspacing="3" align="center">
+            <tr>
+
+                <td><label> Nome da peça : </label></td>
+            <td><input type="text" id="nome" name="nome" size="30" maxlength="" placeholder="Ex: Blusa, Saia, Vestido..." required/></td>
+                </tr>
+                <tr>
+            <tr>
+     
+                <td><label> Estilo : </label></td>
+    
+                    <td><select id="estilo" name="estilo" required>
+          
+                    <option value="" selected="selected" > Selecione </option>
+                    <option value="casual"> Casual </option>
+                    <option value="despojado"> Despojado </option>
+                    <option value="esportivo"> Esportivo </option>
+                    <option value="elegante"> Elegante </option>
+                    
+                  </select> </td>
+                    </tr>
+                    <tr>
+                <td><label> Tecido : </label></td>
+                <td><input type="text" id="Modelo" name="Modelo" size="30" maxlength="" placeholder="Ex: canelado, malha, cetim..." required/></td>
+                    </tr>
+                    <tr>
+                <td><label> Marca : </label></td>
+                <td>
+                    <label> 
+                    <input type="checkbox" id="Adidas" name="Adidas" value="Adidas"/> Adidas
+                    </label>
+                    <br/>
+                    <label> 
+                    <input type="checkbox" id="Levi's" name="Levi's" value="Levi's"/> Levi's
+                    </label>
+                    <br/>
+                    <label> 
+                    <input type="checkbox" id="Nike" name="Nike" value="Nike"/> Nike
+                    </label>
+                    <br/>
+                    <label> 
+                    <input type="checkbox" id="C&A" name="C&A" value="C&A"/> C&A
+                    </label>
+                    <br/>
+                    <label> 
+                    <input type="checkbox" id="Renner" name="Renner" value="Renner"/> Renner
+                    </label>
+                    <br/>
+                    <label> 
+                    <input type="checkbox" id=" Riachuelo" name=" Riachuelo" value=" Riachuelo"/> Riachuelo
+                    </label>
+
+            
+                    </td>
+                    </tr>
+                    <tr>
+                        <td><label> Estampa: </label></td>
+                        <td><input type="text" id="estampa" name="estampa" size="" max="" placeholder="Digite a estampa" required/></td>
+                            </tr>
+                    <tr>
+                        <td><label> Tamanho :</label></td>
+                        <td>
+                        <label> 
+                        <input type="radio" id="P" name="P" value="P"/> PP
+                        </label>
+                        <br/>
+                        <label> 
+                        <input type="radio" id="P" name="P" value="P"/> P
+                        </label>
+                        <br/>
+                        <label> 
+                        <input type="radio" id="P" name="P" value="P"/> M
+                        </label>
+                        <br/>
+                        <label> 
+                        <input type="radio" id="P" name="P" value="P"/> G
+                        </label>
+                        <br/>
+                        <label> 
+                        <input type="radio" id="P" name="P" value="P"/> GG
+                        </label>
+                        <br/>
+                        <label> 
+                        <input type="radio" id="P" name="P" value="P"/> XGG
+                        </label>
+                        </td>
+                            </tr>
+                    <tr>
+                        <td><label> Cor:  </label></td>
+                        <td><input type="color" id="cor" name="cor" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label> Que horas usaria a roupa  : </label></td>
+                        <td><input type="time" id="horario" name="horario" min="05:10:00" max="00:00:00" required/></td>
+                            </tr>
+                    <tr>
+                        <td><label> Média de preço : </label></td>
+                        <td><input type="text" id="media_preço" name="media_preço" size="" max="" placeholder="Digite o valor da roupa " required/></td>
+                            </tr>
+                            <tr> 
+                            </tr>
+                            <tr>
+                                <td><label> Data da troca  : </label></td>
+                                <td><input type="date" id="date_troca" name="date_troca" min="2000-01-01" max="2024-01-01" required/></td>
+                                    </tr>
+                            <tr>
+                            <td><label> Descrição sobre a roupa: </label></td>
+                
+                            <td> <textarea cols="50" rows="5" id="coment" name="coment" maxlength="240" required></textarea> </td>
+                        </tr>   
+                            
+         
+
+                </fieldset>
+            </table>
+    
+        <fieldset>
+            <legend> Feedback : </legend>
+            <table cellpadding="5" cellspacing="3" align="center">
+            </tr>
+            <tr>
+                <td> <label for="avaliaçao"> Avaliação :</label></td>
+                <td> <input type="range" id="tamanho" name="tamanho" min="1" max="100" step="1"></td>
+        
+            </tr>
+            <tr>
+                <td><label> Comentario : </label></td>
+                
+                  <td> <textarea cols="50" rows="5" id="coment" name="coment" maxlength="240" required></textarea> </td>
+                    </tr>
+              <tr>
+              <th colspan="2"> 
+          <input type="submit" id="enviar" name="enviar" value="ENVIAR DADOS"/>
+          <input type="reset" id="limpar" name="limpar" value="LIMPAR"/> </th>
+              </tr>
+        </fieldset>
+        
+                
+
+      </td></tr>
+    </table>
+
+</form>
+
+    </body>
+</html>
